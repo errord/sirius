@@ -1,0 +1,11 @@
+2009-7-19 sirius 0.2.1.2
+	修正windows下vc8的工程文件
+	fcs中增加一条规则,当串长度为1时,不作为公共频率子串
+2009-7-17 sirius 0.2.1.1
+	linux下使用cmake作为构建系统
+2009-7-16 sirius 0.2.1
+	suffixtree 加入tool脚本(make_suffixtree.py,cmp_suffixtree.py),用来生成suffix文本,以及对比两个suffix文件
+	修正fcs的一个bug,读取文本文件时,读到空行就认为是文件结尾,程序退出.修正后跳过空行.
+2009-7-2 发布0.1
+2009-6-19 创建
+

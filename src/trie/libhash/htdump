@@ -1,0 +1,6 @@
+HashTable:
+  HashTable Slot Size: 100
+  HashTable Node Size: 2
+  HashTable Max Value: 10
+	[97] -> (k:a => v:10)
+	[98] -> (k:b => v:2)

@@ -1,0 +1,10 @@
+exec_program(cp ARGS ${CMAKE_CURRENT_SOURCE_DIR}/*.h ${INCLUDE_OUTPUT_PATH})
+aux_source_directory(. SIRIUS_LIB_BASE_SRC_DIR)
+add_library(sirius_base_static ${SIRIUS_LIB_BASE_SRC_DIR})
+add_library(sirius_base SHARED ${SIRIUS_LIB_BASE_SRC_DIR})
+target_link_libraries(sirius_base iconv)
+set_target_properties(sirius_base_static PROPERTIES OUTPUT_NAME "sirius_base")
+set_target_properties(sirius_base PROPERTIES CLEAN_DIRECT_OUTPUT 1) 
+set_target_properties(sirius_base_static PROPERTIES CLEAN_DIRECT_OUTPUT 1)
+set_target_properties(sirius_base PROPERTIES VERSION ${LIB_SIRIUS_BASE_VERSION} SOVERSION ${LIB_SIRIUS_BASE_API_VERSION})
+
